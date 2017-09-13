@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="springHibernateDAO" class="com.nitish.teach.dao.SpringHibernateDAOImpl"/>
+
+<!--  setter Injection -->
+<!-- <bean name="customerService" class="com.nitish.teach.service.CustomerServiceImpl">
+	<property name="springHibernateDaoClient" ref="springHibernateDAO"/>
+</bean>
+ -->
+ 
+<!--  Constructor Injection -->
+<!-- <bean name="customerService" class="com.nitish.teach.service.CustomerServiceImpl">
+	<constructor-arg index="0" ref="springHibernateDAO" name="springHibernateDao" ></constructor-arg>
+</bean>
+ -->
+
+<!-- Auto wire features --> 
+
+<!--  autowire = 'Constructor behaves same as Constructor injection -->
+<!-- <bean name="customerService" class="com.nitish.teach.service.CustomerServiceImpl" autowire="constructor"/>   -->
+	
+<bean name="customerService" class="com.nitish.teach.service.CustomerServiceImpl" autowire="byName"/> 
+<bean name="springHibernateDaoClient" class="com.nitish.teach.dao.SpringHibernateDAOImpl"/>
+
+
+</beans>

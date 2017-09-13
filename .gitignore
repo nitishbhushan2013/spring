@@ -6,16 +6,29 @@ springFramework/.springBeans/**
 
 .recommenders/i**
 
-RemoteSystemsTempFiles/.project
+RemoteSystemsTempFiles/.project/**
 
-springFramework_simpleJava/.classpath
+springFramework_simpleJava/.classpath/**
 
 springFramework_simpleJava/.project
 
 springFramework_simpleJava/.settings/**
 
-springFramework/.settings/org.eclipse.jdt.core.prefs
+springFramework/.settings/**
 
-springFramework/.settings/org.eclipse.m2e.core.prefs
 
-springFramework/.springBeans
+springFramework/.springBeans/**
+
+springFramework_annotation/.settings/**
+
+springFramework_xml/target/classes/**
+
+springFramework_annotation/.classpath
+
+
+
+springFramework_xml/.settings/**
+
+springFramework/target/classes/**
+
+**.class

@@ -32,3 +32,5 @@ springFramework_xml/.settings/**
 springFramework/target/classes/**
 
 **.class
+
+springFramework_javaConfig/.settings/**

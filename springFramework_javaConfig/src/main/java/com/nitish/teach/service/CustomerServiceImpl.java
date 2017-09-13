@@ -12,26 +12,26 @@ import com.nitish.teach.model.Customer;
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 	
+	@Autowired
 	SpringHibernateDAO springHibernateDaoClient;
 	
 	public CustomerServiceImpl() {	
 	}
 	
 	//2. constructor injection 
-	public CustomerServiceImpl(SpringHibernateDAO springHibernateDAO) {	
+	/*public CustomerServiceImpl(SpringHibernateDAO springHibernateDAO) {	
 		this.springHibernateDaoClient = springHibernateDAO;
-	}
+	}*/
 	
 	public List<Customer> getAllCustomer() {
 		return springHibernateDaoClient.getAllCustomer();
 	}
 
-	public SpringHibernateDAO getSpringHibernateDaoClient() {
-		return springHibernateDaoClient;
-	}
+	
 
-	/*// 1. Setter Injection 
-	public void setSpringHibernateDaoClient(SpringHibernateDAO springHibernateDaoClient) {
+	// 1. Setter Injection 
+	
+	/*public void setSpringHibernateDaoClient(SpringHibernateDAO springHibernateDaoClient) {
 		this.springHibernateDaoClient = springHibernateDaoClient;
 	}*/
 	
